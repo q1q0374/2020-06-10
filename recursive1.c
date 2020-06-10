@@ -1,0 +1,22 @@
+#include<stdio.h>
+int fact(int a)
+{	 
+    printf("%d\n",a);
+	if(a==1)
+	   return 1;
+	else
+	   return a*fact(a-1);	 
+	
+	}
+int main()
+{
+	int a,n;
+	
+	printf("숫자입력");
+	scanf("%d",&n);
+
+	a=fact(n);
+	 
+	printf("%d\n",a);
+	return 0;	
+}
